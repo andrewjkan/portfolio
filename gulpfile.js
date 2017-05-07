@@ -153,6 +153,11 @@ gulp.task('media', function() { //copy any miscellaneous media files over
 	.pipe(gulp.dest('build/media'))
 });
 
+gulp.task('vendor', function() { //copy any miscellaneous media files over
+	return gulp.src('src/vendor/**/*')
+	.pipe(gulp.dest('build/vendor'))
+});
+
 gulp.task('htmlHint', function() { //validate html files
 	return gulp.src('src/**/*.html')
 		.pipe(plumber({errorHandler: onError})) //if the validator crashes, fail gracefully
@@ -195,7 +200,7 @@ gulp.task('cache:clear', function (callback) { //clear the cache for imagemin
 
 gulp.task('build', function (callback) { //do a full build for the site
 	runSequence('clean:build', 'sass',
-		['css', 'scripts', 'images', 'fonts', 'media', 'pages'],
+		['css', 'scripts', 'vendor', 'images', 'fonts', 'media', 'pages'],
 		callback
 	)
 });
