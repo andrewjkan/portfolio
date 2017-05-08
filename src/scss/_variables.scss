@@ -2,24 +2,12 @@
  * Global Variables
  */
 
-/* Breakpoint Screen Sizes */
-$screen-bp-min	: 320px;	// content shouldn't get below this width
-$screen-bp-sm	: 750px;
-$screen-bp-md	: 1270px;
-$screen-bp-lg	: 1600px;	// content shouldn't get above this width
-
-/* Breakpoint Font Root Sizes */
-$text-bp-min	: 16px;		// fonts stay this size and will not scale under screen-bp-min
-$text-bp-sm		: 16px;		// fonts will scale up relative to screen-bp-sm
-$text-bp-md		: 12px;		// fonts will scale up relative to screen-bp-md
-$text-bp-lg		: 10px;		// fonts will scale up relative to screen-bp-lg then stay there
-
 /* Colors */
-$color-1	: #FFFFFF;	// white
-$color-2	: #000000;	// black
-
-$overlay-bg	: rgba(0,0,0,0.95);	// semi-transparent black
-
+$color-1	: #212121;	// almost black
+$color-2	: #184070;	// dark blue
+$color-3	: #a74e8b;  // pink
+$color-4	: #424242;  // dark grey
+$color-5	: #797979;  // light grey
 
 /* Official Social Media Colors */
 $twitter	: #00aced;
@@ -43,7 +31,6 @@ $yahoo		: #7B0099;
 $blogger	: #fb8f3d;
 $soundcloud	: #ff3a00;
 $snapchat	: #FFFC00;
-
 
 /* Fonts */
 $font-1		: helvetica, arial, sans-serif;
