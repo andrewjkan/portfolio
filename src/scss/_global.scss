@@ -125,6 +125,15 @@ header {
 	}
 }
 
+@media (max-width: 768px) {
+	header .header-content {
+		padding-bottom: 50px;
+	}
+	#about {
+		background-size: cover;
+	}
+}
+
 @media (min-width: 768px) {
 	.navbar-default .navbar-header .navbar-brand {
 		color: hsla(0, 0%, 100%, .7);
